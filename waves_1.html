@@ -66,17 +66,15 @@
   height: 100%;
 }
 </style>
-<script>
-  var myPlayer;
-  jQuery(function () {
-
-      myPlayer = jQuery("#P1").YTPlayer();
-      myPlayer.on("YTPData", function (e) {
-          $(".dida").html(e.prop.title + "<br>@" + e.prop.channelTitle);
-      });
-  });
-</script>
 <!-- InstanceEndEditable -->
+<style>
+.img_inner{
+  width:100px;
+  height:60px;
+  float:left;
+  margin-right:10px;
+}
+</style>
 </head>
 <body>
 	<!-- InstanceBeginEditable name="EditRegion6" --><!-- InstanceEndEditable -->
@@ -146,24 +144,12 @@
             2021, 2023</p>
             <p>Italo Calvino incarnates Mr. Paloma in the novel. He walks on the beach, observes carefully, and tries to describe a wave.</p>
             <p>Following the unveiling of Mr. Paloma's observations and contemplation as he walks along the beach, a desk and video are placed in this work. The audience can read the novel or sit down and listen to a sound performance of reading the novel.</p>
-            <p>
-            <div class="row gx-2">
-              <div class="col-2">
-                <div class="img_wrapper">
-                    <a href="waves.html" class="img-link">
-                      <div class="img_inner" style="background-image: url('images/waves_04.jpg');background-size:cover;background-position:center center"></div>
-                    </a>
-                </div>
-              </div>
-              <div class="col-2">
-                <div class="img_wrapper">
-                    <a href="waves_1.html" class="img-link">
-                      <div class="img_inner" style="background-image: url('images/waves_02.jpg');background-size:cover;background-position:center center"></div>
-                    </a>
-                </div>
-              </div>
-            </div>
-            </p>
+              <a href="waves.html" class="img-link">
+                <div class="img_inner" style="background-image: url('images/waves_04.jpg');background-size:cover;background-position:center center;opacity: 0.9"></div>
+              </a>
+              <a href="waves_1.html" class="img-link">
+                <div class="img_inner" style="background-image: url('images/waves_02.jpg');background-size:cover;background-position:center center;opacity: 0.9"></div>
+              </a>
           </div>
         </div>
       </div>
