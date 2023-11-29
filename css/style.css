@@ -9792,12 +9792,12 @@ textarea {
   transform: translate(-50%, -50%); }
 
 .retro-layout .v-height {
-  height: 160px;
+  height: 140px;
 }
 
 @media (max-width: 767.98px) {
   .retro-layout .img {
-    height: 200px; 
+    height: 140px; 
   } 
 }
 
@@ -9859,7 +9859,7 @@ textarea {
   position: absolute;
   bottom: 0;
   z-index: 10;
-  padding: 20px;
+  padding: 16px;
   /*max-width: 350px;*/
 }
   .retro-layout .text h2, .retro-layout .text .h2 {
