@@ -32,17 +32,17 @@
 
 	<link rel="stylesheet" href="css/flatpickr.min.css">
 <!-- InstanceBeginEditable name="doctitle" -->
-	<title>The Swimmer</title>
+	<title>海浪、小石頭與帕洛瑪先生 Waves, Small Stones and Mr. Palomar</title>
 	<!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
-<meta property="og:title" content="The Swimmer">
-<meta property="og:description" content="Te-Mao Lee. Single-channel video. 2017. In the sunny day, the camera lens is shooting the sea surface, a swimmer is swimming slowly on the sea. The swimmer seems to keep swimming or may be something will happen. If audience looks carefully, they will find that the swimmer has not been swimming all the way since the camera shutter was pressed, but the same swimming loop is repeating on the screen constantly. In other words, the swimmer is trapped in the border of digital lens, there is no entrance and exit.">
-<meta property="og:image" content="images/swimmer_01.jpg">
+<meta property="og:title" content="海浪、小石頭與帕洛瑪先生 Waves, Small Stones and Mr. Palomar">
+<meta property="og:description" content="伊塔羅．卡爾維諾化身為小說中的帕洛瑪先生，他在海邊散步、細細的觀察，他試著要描述一個海浪。循著帕洛瑪先生揭開的、走在海灘上的觀察與沈思，本作品擺放了一張書桌以及影像，觀眾可以閱讀小說，也可以坐下來聽一場讀小說的聲音演出。">
+<meta property="og:image" content="images/waves_01.jpg">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://temaolee.com/the_swimmer.html">
-<meta property="og:video" content="https://www.youtube.com/watch?v=Ty75bvtfVi0">
+<meta property="og:url" content="https://temaolee.com/waves_1_zh.html">
+<meta property="og:video" content="https://youtu.be/19SwuMtf-iw">
 <meta property="fb:app_id" content="">
-<meta name="description" content="Te-Mao Lee. Single-channel video. 2017. In the sunny day, the camera lens is shooting the sea surface, a swimmer is swimming slowly on the sea. The swimmer seems to keep swimming or may be something will happen. If audience looks carefully, they will find that the swimmer has not been swimming all the way since the camera shutter was pressed, but the same swimming loop is repeating on the screen constantly. In other words, the swimmer is trapped in the border of digital lens, there is no entrance and exit.">
+<meta name="description" content="伊塔羅．卡爾維諾化身為小說中的帕洛瑪先生，他在海邊散步、細細的觀察，他試著要描述一個海浪。循著帕洛瑪先生揭開的、走在海灘上的觀察與沈思，本作品擺放了一張書桌以及影像，觀眾可以閱讀小說，也可以坐下來聽一場讀小說的聲音演出。">
 
 <link href='https://fonts.googleapis.com/css?family=Lekton|Lobster' rel='stylesheet' type='text/css'>
 <link href="ytplayer/dist/css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
@@ -50,6 +50,18 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="ytplayer/dist/jquery.mb.YTPlayer.js"></script>
 <style>
+.img_wrapper{
+    position: relative;
+    width:100%;
+    padding-bottom:67%;
+}
+.img_inner{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
 .video-container {
   position: relative;
   width: 100%;
@@ -63,16 +75,6 @@
   height: 100%;
 }
 </style>
-<script>
-  var myPlayer;
-  jQuery(function () {
-
-      myPlayer = jQuery("#P1").YTPlayer();
-      myPlayer.on("YTPData", function (e) {
-          $(".dida").html(e.prop.title + "<br>@" + e.prop.channelTitle);
-      });
-  });
-</script>
 <!-- InstanceEndEditable -->
 <style>
 .img_inner{
@@ -105,10 +107,10 @@
 						<div class="col-6 col-md-8">
 							<ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu mx-auto">
 							  <!-- InstanceBeginEditable name="EditRegion5" -->
-							  <li id="m_works" class="active"><a href="index.html">WORKS</a></li>
-							  <li id="m_curating"><a href="curating.html">CURATING</a></li>
+							  <li id="m_works" class="active"><a href="index_zhhtml">作品</a></li>
+							  <li id="m_curating"><a href="curating_zh.html">策展</a></li>
 							  <li id="m_cv"><a href="cv.html">CV</a></li>
-							  <li id="m_lan"><a href="the_swimmer_zh.html" class="fs-6 text-black-50">EN</a></li>
+							  <li id="m_lan"><a href="waves_1.html" class="fs-6 text-black-50">中文</a></li>
 							  <!-- InstanceEndEditable -->
 							</ul>
 						</div>
@@ -124,27 +126,35 @@
 	</nav>
 	<!-- InstanceBeginEditable name="EditRegion3" -->
 	<div class="section sec-halfs py-5">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row">
-				<div class="col-lg-7 col-xl-5 offset-xl-1">
+				<div class="col-lg-7 col-xl-7">
+          <p><img src="images/waves_01.jpg" alt="Image" class="img-fluid"></p>
           <p>
             <div class="video-container">
               <iframe 
-                src="https://www.youtube.com/embed/Ty75bvtfVi0?rel=0" title="Trail" frameborder="0" allowfullscreen>
+                src="https://www.youtube.com/embed/gPsi_UJ23eA?rel=0" title="YouTube video player" frameborder="0" allowfullscreen>
                </iframe>
             </div>          
           </p>
+          <p><img src="images/waves_03.jpg" alt="Image" class="img-fluid"></p>
+          <p>
+            <div class="video-container">
+              <iframe 
+                src="https://www.youtube.com/embed/19SwuMtf-iw?rel=0" title="YouTube video player" frameborder="0" allowfullscreen>
+               </iframe>
+            </div>          
+          </p>
+          <p><img src="images/waves_05.jpg" alt="Image" class="img-fluid"></p>
         </div>
 				<div class="col-lg-5 col-xl-5 ps-lg-5">
           <div class="post-content-body">
-            <h3 class="mb-5">The Swimmer</h3>
-            <p>Single-channel video<br>
-            2017</p>
-            <p>In the sunny day, the camera lens is shooting the sea surface, a swimmer is swimming slowly on the sea. The swimmer seems to keep swimming or may be something will happen. If audience looks carefully, they will find that the swimmer has not been swimming all the way since the camera shutter was pressed, but the same swimming loop is repeating on the screen constantly. In other words, the swimmer is trapped in the border of digital lens, there is no entrance and exit.</p>
-            <p>In the artwork, the lens sets up a boundary that does not exist on the scene, it makes the “camera lens -> swimmer -> sea” and “sea -> swimmer -> camera lens” two axes coexist and parallel staggered. Is it rectangular small pool, or swimming in the vast sea?</p>
-            <p>On the other hand, “The swimmer I” reveals the question of video’s temporality. The swimming loop indicates that there is a strange time point in the video. It can be any moment in the video, but it also not equal to any moment. It becomes a strange point that disintegrates and constructs a particular temporality of image content. As Gilles Deleuze said the crystals of time:</p>
-            <p><i>Time has to split itself in two at each moment as present and past, which differ from each other in nature, or, what amounts to the same time, it has to split the present in two heterogeneous directions, one of which is launched towards the future while the other falls into the past. Time has to split at the same time as it sets itself out or unrolls itself: it splits in two dissymmetrical jets, one of which makes all the present pass on, while the other preserves all the past. Time consists of this split, and it is this, it is time, that we see in the crystal. (CINEMA II: The Time-image 81)</i></p>
-            <p>When the diachronic and linear image time is released, the image content is peeled off from the time base that the image relies. It takes root into the sea, and it self-satisfies and condenses to form its time system. This crystal of time is distributed average on the swimmer’s loop. When the audience joins into the system, there will be a moment, their senses feel stagnant, almost vacuum.</p>
+            <h3 class="mb-5">海浪、小石頭與帕洛瑪先生 Waves, Small Stones and Mr. Palomar</h3>
+            <p>單頻道錄像、書桌、小說、聲音裝置<br>
+            2021-23</p>
+            <p>伊塔羅．卡爾維諾化身為小說中的帕洛瑪先生，他在海邊散步、細細的觀察，他試著要描述一個海浪。</p>
+            <p>循著帕洛瑪先生揭開的、走在海灘上的觀察與沈思，本作品擺放了一張書桌以及影像，觀眾可以閱讀小說，也可以坐下來聽一場讀小說的聲音演出。</p>
+            <p><a href="waves_zh.html" class="img-link">&lt;&lt; back</a></p>
           </div>
         </div>
       </div>
