@@ -34,68 +34,49 @@
 	<title>45 Minutes</title>
 	<!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
-<meta property="og:title" content="45 Minutes">
-<meta property="og:description" content="To avoid excessive nitrogen absorption in the blood, the safe bottom time limit (No-Decompression Limit, NDL) for a scuba diver at 20 meters depth is 45 minutes. The filming process of this work fully utilized this 45-minute safe bottom time before entering the decompression phase.">
+<meta property="og:title" content="45分鐘">
+<meta property="og:title" content="45分鐘 45 Minutes">
+<meta property="og:description" content="為了避免過多的氮氣溶入血液中，當人類以水肺潛水到20公尺深度時，45分鐘是安全停留的時間極限(NDL)。此作品的拍攝過程用盡了45分鐘的安全停留時間，進入Deco階段。">
 <meta property="og:image" content="https://temaolee.com/images/45_minutes_01.jpg">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://temaolee.com/45_minutes.html">
+<meta property="og:url" content="https://temaolee.com/45_minutes_1_zh.html">
 <meta property="og:video" content="https://youtu.be/M0auPTK8ugY">
 <meta property="fb:app_id" content="1521493382007739">
-<meta name="description" content="To avoid excessive nitrogen absorption in the blood, the safe bottom time limit (No-Decompression Limit, NDL) for a scuba diver at 20 meters depth is 45 minutes. The filming process of this work fully utilized this 45-minute safe bottom time before entering the decompression phase.">
+<meta name="description" content="為了避免過多的氮氣溶入血液中，當人類以水肺潛水到20公尺深度時，45分鐘是安全停留的時間極限(NDL)。此作品的拍攝過程用盡了45分鐘的安全停留時間，進入Deco階段。">
 <meta name="keyword" content="Te-Mao Lee, 李德茂">
 
 <link href='https://fonts.googleapis.com/css?family=Lekton|Lobster' rel='stylesheet' type='text/css'>
 <link href="ytplayer/dist/css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="ytplayer/dist/jquery.mb.YTPlayer.min.js"></script>
+<script src="ytplayer/dist/jquery.mb.YTPlayer.js"></script>
 <script src="ytplayer/examples/assets/apikey.js"></script>
-<script>
-    var myPlayer;
-    jQuery(function () {
-      myPlayer = jQuery("#bgndVideo").YTPlayer({useOnMobile:true});
 
-      /* DEBUG ******************************************************************************************/
-
-      var YTPConsole = jQuery("#eventListener");
-      // EVENTS: YTPReady YTPStart YTPEnd YTPPlay YTPLoop YTPPause YTPBuffering YTPMuted YTPUnmuted YTPChangeVideo
-      myPlayer.on("YTPReady YTPStart YTPEnd YTPPlay YTPLoop YTPPause YTPBuffering YTPMuted YTPUnmuted YTPChangeVideo", function (e) {
-        YTPConsole.append("event: " + e.type + " (" + jQuery("#bgndVideo").YTPGetPlayer().getPlayerState() + ") > time: " + e.time);
-        YTPConsole.append("<br>");
-      });
-
-      // EVENT: YTPChanged
-      myPlayer.on("YTPChanged", function (e) {
-        YTPConsole.html("");
-      });
-
-      myPlayer.on("YTPChangeVideo", function(e){
-        console.debug("YTPChangeVideo", e);
-
-      });
-    });
-</script>
+<script async src="//www.youtube.com/iframe_api"></script>
 <style>
-body {
-  background-color:#000000;
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
 }
-.logo {
-  color: rgba(255, 255, 255, 1);
-}
-.logo:hover {
-  color: rgba(255, 255, 255, 0.7);
-}
-.site-nav .site-navigation .site-menu > li > a {
-  color: rgba(255, 255, 255, 1);
-}
-.site-nav .site-navigation .site-menu > li > a:hover {
-  color: rgba(255, 255, 255, 0.7);
-}
-.site-nav .site-navigation .site-menu > li.active > a {
-  color: #FFFFFF;
-  background-color: rgba(0,0,0,0.6);
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 </style>
+<script>
+  var myPlayer;
+  jQuery(function () {
+
+      myPlayer = jQuery("#P1").YTPlayer();
+      myPlayer.on("YTPData", function (e) {
+          $(".dida").html(e.prop.title + "<br>@" + e.prop.channelTitle);
+      });
+  });
+</script>
 <!-- InstanceEndEditable -->
 <style>
 .img_inner{
@@ -107,9 +88,7 @@ body {
 </style>
 </head>
 <body>
-	<!-- InstanceBeginEditable name="EditRegion6" -->
-  <div id="bgndVideo" class="player" data-property="{videoURL:'M0auPTK8ugY',containment:'body', showControls:false, autoPlay:true, loop:true, vol:50, mute:true, opacity:1, addRaster:true, quality:'highres', optimizeDisplay:true, ratio:'16/9'}"></div>
-  <!-- InstanceEndEditable -->
+	<!-- InstanceBeginEditable name="EditRegion6" --><!-- InstanceEndEditable -->
 	<div class="site-mobile-menu site-navbar-target">
 		<div class="site-mobile-menu-header">
 			<div class="site-mobile-menu-close">
@@ -130,18 +109,18 @@ body {
 						<div class="col-5 col-md-7 col-lg-8 ps-3">
 							<ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu mx-auto">
 							  <!-- InstanceBeginEditable name="EditRegion5" -->
-							  <li id="m_works" class="active"><a href="index.html">WORKS</a></li>
-							  <li id="m_curating"><a href="curating.html">CURATING</a></li>
-							  <li id="m_cv"><a href="cv.html">CV</a></li>
-							  <li id="m_lan" class="d-block d-lg-none d-xl-none"><a href="45_minutes_zh.html" class="fs-6">EN/繁中</a></li>
+							  <li id="m_works" class="active"><a href="index_zh.html">作品</a></li>
+							  <li id="m_curating"><a href="curating_zh.html">策展</a></li>
+							  <li id="m_cv"><a href="cv_zh.html">CV</a></li>
+							  <li id="m_lan" class="d-block d-lg-none d-xl-none"><a href="45_minutes_1.html" class="fs-6">繁中/EN</a></li>
 							  <!-- InstanceEndEditable -->
 							</ul>
 						</div>
 						<div class="col-2 text-end"><!-- InstanceBeginEditable name="EditRegion7" -->
-              <a href="#" class="burger ms-auto float-end site-menu-toggle js-menu-toggle d-inline-block d-lg-none light">
+              <a href="#" class="burger ms-auto float-end site-menu-toggle js-menu-toggle d-inline-block d-lg-none dark">
 								<span></span>
 							</a>
-              <span class="fs-6 d-none d-lg-block d-xl-block"><a href="45_minutes_zh.html" class="fs-6 text-light">繁中</a></span><!-- InstanceEndEditable -->
+              <span class="fs-6 d-none d-lg-block d-xl-block"><a href="45_minutes_1.html" class="fs-6">EN</a></span><!-- InstanceEndEditable -->
 						</div>
 					</div>
 				</div>
@@ -152,11 +131,23 @@ body {
 	<div class="section sec-halfs py-5">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6 offset-lg-6 col-xl-5 offset-xl-7">
-          <div class="post-content-body text-light">
-			<h5><a href="45_minutes_1.html" class="img-link text-light">45 Minutes</a></h5>
-            <p class="small">Single-channel video (28'46&quot;)<br>
-            2025</p>
+				<div class="col-lg-7 col-xl-7">
+          		  <p><a href="images/45_minutes_02.jpg" target="_blank"><img src="images/45_minutes_02.jpg" alt="" class="img-fluid"></a></p>
+                  <p>
+                    <div class="video-container">
+                      <iframe src="https://www.youtube.com/embed/M0auPTK8ugY?rel=0" title="45 Minutes" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </p>
+                </div>
+				<div class="col-lg-5 col-xl-5 ps-lg-5">
+          <div class="post-content-body">
+			  <h3 class="mb-4">45分鐘<br><small class="text-muted">45 Minutes</small></h3>
+              <p>單頻道錄像 (28'46&quot;)<br>
+              2025</p>
+            <p>為了避免過多的氮氣溶入血液中，當人類以水肺潛水到20公尺深度時，45分鐘是安全停留的時間極限(NDL)。此作品的拍攝過程用盡了45分鐘的安全停留時間，進入Deco階段。</p>
+			  <p>《45分鐘》以一種夢幻般的美麗畫面，持續的錄下20公尺的海水厚度以及規律的呼吸氣泡，其背後則是隱含著人類來到此處時的安全極限。</p>
+			  <p>潛水員：李德茂、林建翰、辛佩津</p>
+            <p><a href="45_minutes_zh.html" class="img-link">&lt;&lt; back</a></p>
           </div>
         </div>
       </div>

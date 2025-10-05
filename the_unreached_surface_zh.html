@@ -31,17 +31,17 @@
 
 	<link rel="stylesheet" href="css/flatpickr.min.css">
 <!-- InstanceBeginEditable name="doctitle" -->
-	<title>45 Minutes</title>
+	<title>尚未抵達的地表 The Unreached Surface</title>
 	<!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
-<meta property="og:title" content="45 Minutes">
-<meta property="og:description" content="To avoid excessive nitrogen absorption in the blood, the safe bottom time limit (No-Decompression Limit, NDL) for a scuba diver at 20 meters depth is 45 minutes. The filming process of this work fully utilized this 45-minute safe bottom time before entering the decompression phase.">
-<meta property="og:image" content="https://temaolee.com/images/45_minutes_01.jpg">
+<meta property="og:title" content="尚未抵達的地表 The Unreached Surface">
+<meta property="og:description" content="在史前，尚未誕生文字的年代，遺址中僅留下石器、陶器、骨骸等物質。正因沒有留下文字，史前世界留下許多未解之謎。史前人燒土為器，將土壤轉化為承載生活的容器。延續這個轉化的動作，《尚未抵達的地表》(The Unreached Surface) 由一群潛水員下潛至海平面下20公尺處，取回一批無黏性的海底砂土，經由高溫熔融後質變為玻璃，再以此吹製成密閉的生態瓶。">
+<meta property="og:image" content="https://temaolee.com/images/the_unreached_surface_06.png">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://temaolee.com/45_minutes.html">
-<meta property="og:video" content="https://youtu.be/M0auPTK8ugY">
+<meta property="og:url" content="https://temaolee.com/the_unreached_surface_zh.html">
+<meta property="og:video" content="https://youtu.be/1KOfq5-Aw3o">
 <meta property="fb:app_id" content="1521493382007739">
-<meta name="description" content="To avoid excessive nitrogen absorption in the blood, the safe bottom time limit (No-Decompression Limit, NDL) for a scuba diver at 20 meters depth is 45 minutes. The filming process of this work fully utilized this 45-minute safe bottom time before entering the decompression phase.">
+<meta name="description" content="在史前，尚未誕生文字的年代，遺址中僅留下石器、陶器、骨骸等物質。正因沒有留下文字，史前世界留下許多未解之謎。史前人燒土為器，將土壤轉化為承載生活的容器。延續這個轉化的動作，《尚未抵達的地表》(The Unreached Surface) 由一群潛水員下潛至海平面下20公尺處，取回一批無黏性的海底砂土，經由高溫熔融後質變為玻璃，再以此吹製成密閉的生態瓶。">
 <meta name="keyword" content="Te-Mao Lee, 李德茂">
 
 <link href='https://fonts.googleapis.com/css?family=Lekton|Lobster' rel='stylesheet' type='text/css'>
@@ -50,34 +50,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="ytplayer/dist/jquery.mb.YTPlayer.min.js"></script>
 <script src="ytplayer/examples/assets/apikey.js"></script>
-<script>
-    var myPlayer;
-    jQuery(function () {
-      myPlayer = jQuery("#bgndVideo").YTPlayer({useOnMobile:true});
-
-      /* DEBUG ******************************************************************************************/
-
-      var YTPConsole = jQuery("#eventListener");
-      // EVENTS: YTPReady YTPStart YTPEnd YTPPlay YTPLoop YTPPause YTPBuffering YTPMuted YTPUnmuted YTPChangeVideo
-      myPlayer.on("YTPReady YTPStart YTPEnd YTPPlay YTPLoop YTPPause YTPBuffering YTPMuted YTPUnmuted YTPChangeVideo", function (e) {
-        YTPConsole.append("event: " + e.type + " (" + jQuery("#bgndVideo").YTPGetPlayer().getPlayerState() + ") > time: " + e.time);
-        YTPConsole.append("<br>");
-      });
-
-      // EVENT: YTPChanged
-      myPlayer.on("YTPChanged", function (e) {
-        YTPConsole.html("");
-      });
-
-      myPlayer.on("YTPChangeVideo", function(e){
-        console.debug("YTPChangeVideo", e);
-
-      });
-    });
-</script>
 <style>
 body {
   background-color:#000000;
+	margin: 0px;
+	padding: 0px;
+	background: url("images/the_unreached_surface_05.jpg") no-repeat center 0px;
+	background-size: cover;
 }
 .logo {
   color: rgba(255, 255, 255, 1);
@@ -108,7 +87,6 @@ body {
 </head>
 <body>
 	<!-- InstanceBeginEditable name="EditRegion6" -->
-  <div id="bgndVideo" class="player" data-property="{videoURL:'M0auPTK8ugY',containment:'body', showControls:false, autoPlay:true, loop:true, vol:50, mute:true, opacity:1, addRaster:true, quality:'highres', optimizeDisplay:true, ratio:'16/9'}"></div>
   <!-- InstanceEndEditable -->
 	<div class="site-mobile-menu site-navbar-target">
 		<div class="site-mobile-menu-header">
@@ -130,10 +108,10 @@ body {
 						<div class="col-5 col-md-7 col-lg-8 ps-3">
 							<ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu mx-auto">
 							  <!-- InstanceBeginEditable name="EditRegion5" -->
-							  <li id="m_works" class="active"><a href="index.html">WORKS</a></li>
-							  <li id="m_curating"><a href="curating.html">CURATING</a></li>
-							  <li id="m_cv"><a href="cv.html">CV</a></li>
-							  <li id="m_lan" class="d-block d-lg-none d-xl-none"><a href="45_minutes_zh.html" class="fs-6">EN/繁中</a></li>
+							  <li id="m_works" class="active"><a href="index_zh.html">作品</a></li>
+							  <li id="m_curating"><a href="curating_zh.html">策展</a></li>
+							  <li id="m_cv"><a href="cv_zh.html">CV</a></li>
+							  <li id="m_lan" class="d-block d-lg-none d-xl-none"><a href="the_unreached_surface.html" class="fs-6">繁中/EN</a></li>
 							  <!-- InstanceEndEditable -->
 							</ul>
 						</div>
@@ -141,7 +119,7 @@ body {
               <a href="#" class="burger ms-auto float-end site-menu-toggle js-menu-toggle d-inline-block d-lg-none light">
 								<span></span>
 							</a>
-              <span class="fs-6 d-none d-lg-block d-xl-block"><a href="45_minutes_zh.html" class="fs-6 text-light">繁中</a></span><!-- InstanceEndEditable -->
+              <span class="fs-6 d-none d-lg-block d-xl-block"><a href="the_unreached_surface.html" class="fs-6 text-light">EN</a></span><!-- InstanceEndEditable -->
 						</div>
 					</div>
 				</div>
@@ -154,8 +132,8 @@ body {
 			<div class="row">
 				<div class="col-lg-6 offset-lg-6 col-xl-5 offset-xl-7">
           <div class="post-content-body text-light">
-			<h5><a href="45_minutes_1.html" class="img-link text-light">45 Minutes</a></h5>
-            <p class="small">Single-channel video (28'46&quot;)<br>
+            <h5><a href="the_unreached_surface_1.html" class="img-link text-light">尚未抵達的地表<br><small class="text-muted">The Unreached Surface</small></a></h5>
+            <p class="small">單頻道錄像, 玻璃塊, 生態瓶<br>
             2025</p>
           </div>
         </div>
